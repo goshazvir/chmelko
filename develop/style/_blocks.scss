@@ -1,0 +1,377 @@
+//
+// Blocks
+// -------------------------------------------
+
+
+
+//
+// Variables
+// -------------------------------------------
+
+// Fonts
+// -------------------------------------------
+$font-sans-serif:               'Open Sans', sans-serif;
+$font-sans:                     'PT Serif', serif;
+
+// Font Size
+// -------------------------------------------
+$font-size-default:             14px;
+$font-size-title:               18px;
+$font-size-xl:                  21px;
+$font-size-xxl:                 28px;
+
+$font-size-slogan:              23px;
+
+// Color
+// -------------------------------------------
+$color-green:                   #52e200;
+$color-blue:                    #4a90e2;
+$color-purple:                  #a1007e;
+$color-white:                   #fff;
+$color-gray:                    #eee;
+$color-black:                   #333;
+
+//
+// Common
+// -------------------------------------------
+body {
+    font-family: 'Open Sans', $font-sans-serif;
+    font-size: $font-size-default;
+}
+
+
+
+.block-title {
+    padding: 20px 0;
+
+    position: relative;
+
+    font-size: $font-size-xxl;
+    font-weight: 700;
+    text-align: center;
+}
+
+//
+// Header
+// -------------------------------------------
+.header {
+    padding: 10px 0;
+    color: $color-black;
+    box-shadow: 0 2px 13px 0 rgba(184, 184, 184, 0.5);
+}
+
+.slogan {
+    font-size: $font-size-slogan;
+    font-weight: 700;
+    font-family: $font-sans;
+    text-align: center;
+
+    color: $color-blue;
+}
+
+//
+// Contacts
+// -------------------------------------------
+.contacts {
+    text-align: center;
+
+    .fa,
+    .fab {
+        margin-right: 4px;
+        font-size: 18px;
+    }
+
+    .contacts-text {
+        font-size: $font-size-default;
+    }
+
+    .contacts-item {
+        margin: 0 5px;
+        color: $color-black;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-blue;
+        }
+    }
+
+    .fa,
+    .fab,
+    .far,
+    .contacts-text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+//
+// About
+// -------------------------------------------
+.about-us {
+    margin-bottom: 20px;
+
+    .about-media {
+        max-width: 270px;
+        max-height: 240px;
+
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about-description {
+    }
+
+    .about-item {
+        margin-bottom: 20px;
+    }
+
+    .about-title {
+        font-size: $font-size-title;
+        font-weight: bold;
+    }
+
+    .about-hide {
+        &.is-hide {
+            display: none;
+        }
+    }
+
+    .about-content {
+        display: inline;
+
+        & > p {
+            display: inline;
+        }
+    }
+
+    .show-more {
+        padding-left: 5px;
+
+        display: inline;
+
+        color: $color-blue;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+//
+// Services
+// -------------------------------------------
+.services {
+    background: $color-gray;
+    padding-bottom: 20px;
+
+    .block-title {
+
+    }
+
+    .services-title {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .services-list {
+        @include list-unstyled;
+
+        li {
+            &:before {
+                content: "\f058";
+                display: inline-block;
+                margin-right: 5px;
+
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                font-family: Font Awesome\ 5 Free;
+
+                color: $color-blue;
+            }
+        }
+    }
+
+    .container {
+        margin-bottom: 10px;
+    }
+}
+
+.services-price {
+    .note {
+        display: inline-block;
+        vertical-align: middle;
+
+        font-size: $font-size-title;
+    }
+
+    .price {
+        display: inline-block;
+        vertical-align: middle;
+
+        font-size: $font-size-title;
+        font-weight: 700;
+    }
+}
+
+//
+// Block Contacts
+// -------------------------------------------
+.block-contacts {
+    background: $color-blue;
+
+    .contacts-item {
+        display: block;
+        padding: 20px;
+
+        transition: 0.2s linear color, 0.2s linear background;
+
+        color: $color-white;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+            background: $color-white;
+            color: $color-blue;
+        }
+    }
+
+    .fa,
+    .fab,
+    .contacts-text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .fa,
+    .fab {
+        margin-right: 4px;
+        font-size: 28px;
+    }
+
+    .contacts-text {
+        font-size: 18px;
+    }
+}
+
+//
+// Block Certificate
+// -------------------------------------------
+.block-certificate {
+
+
+    .certificate-items {
+
+    }
+
+    .certificate-item {
+
+    }
+}
+
+//
+// Block Conference
+// -------------------------------------------
+.block-conference {
+    background: $color-gray;
+
+    .block-title {
+
+    }
+
+    .conference-items {
+
+    }
+
+    .conference-item {
+
+    }
+}
+
+//
+// Block Feedback
+// -------------------------------------------
+.block-feedback {
+    margin-bottom: 20px;
+
+    .feedback-items {
+
+    }
+
+    .feedback-row {
+        @include clearfix;
+    }
+
+    .feedback-left {
+        float: left;
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .feedback-right {
+        overflow: hidden;
+    }
+
+    .feedback-media {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .feedback-title {
+        margin-bottom: 10px;
+
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .feedback-description {
+
+    }
+
+    .feedback-hide {
+        &.is-hide {
+            display: none;
+        }
+    }
+
+    .show-more {
+
+    }
+
+    .fa {
+        font-size: 28px;
+        color: $color-blue;
+
+        position: absolute;
+        top: 50%;
+        margin-top: -14px;
+    }
+
+    .fa-chevron-circle-left {
+        left: -40px;
+    }
+
+    .fa-chevron-circle-right {
+        right: -40px;
+    }
+}
+
+//
+// Block Helper
+// -------------------------------------------
+.block-helper {
+    background: $color-gray;
+}
+
+
+
+
+
+
+
