@@ -60,6 +60,10 @@ body {
     padding: 10px 0;
     color: $color-black;
     box-shadow: 0 2px 13px 0 rgba(184, 184, 184, 0.5);
+
+    .col-md-9 {
+        padding-left: 0;
+    }
 }
 
 .slogan {
@@ -76,6 +80,7 @@ body {
 // -------------------------------------------
 .contacts {
     text-align: center;
+    font-size: 0;
 
     .fa,
     .fab {
@@ -88,6 +93,9 @@ body {
     }
 
     .contacts-item {
+        display: inline-block;
+        vertical-align: middle;
+
         margin: 0 5px;
         color: $color-black;
         text-decoration: none;
@@ -105,6 +113,60 @@ body {
         vertical-align: middle;
     }
 }
+
+//
+// Lang
+// -------------------------------------------
+.lang {
+    display: inline-block;
+    vertical-align: middle;
+
+    .lang-list {
+        @include list-unstyled;
+        margin: 0;
+        font-size: 0;
+    }
+
+    .lang-item {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px 0 0;
+    }
+
+    .lang-link {
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 4px;
+
+        &.is-active,
+        &:hover {
+            background: $color-blue;
+
+            .lang-text {
+                color: $color-white;
+            }
+        }
+    }
+
+    .lang-ico {
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+
+        & > img {
+            max-width: 24px;
+        }
+    }
+
+    .lang-text {
+        display: inline-block;
+        vertical-align: middle;
+
+        font-size: 14px;
+    }
+}
+
 
 //
 // About
