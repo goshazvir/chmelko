@@ -20,12 +20,12 @@ $( document ).ready(function() {
         arrows: false,
         centerMode: true,
         slidesToShow: 6,
-        slidesToScroll: 1
+        slidesToScroll: 3
     });
 
     $('.js-conference').slick({
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 1500,
         arrows: false,
         centerMode: true,
         slidesToShow: 3,

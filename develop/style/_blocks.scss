@@ -19,6 +19,7 @@ $font-size-default:             14px;
 $font-size-title:               18px;
 $font-size-xl:                  21px;
 $font-size-xxl:                 28px;
+$font-size-xxxl:                34px;
 
 $font-size-slogan:              23px;
 
@@ -46,7 +47,8 @@ body {
 
     position: relative;
 
-    font-size: $font-size-xxl;
+    font-family: $font-sans;
+    font-size: $font-size-xxxl;
     font-weight: 700;
     text-align: center;
 }
@@ -127,7 +129,7 @@ body {
     }
 
     .about-title {
-        font-size: $font-size-title;
+        font-size: $font-size-xl;
         font-weight: bold;
     }
 
@@ -171,7 +173,8 @@ body {
     }
 
     .services-title {
-        margin-bottom: 5px;
+        margin-bottom: 20px;
+        font-size: $font-size-xl;
         font-weight: bold;
     }
 
@@ -179,10 +182,16 @@ body {
         @include list-unstyled;
 
         li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            padding-left: 35px;
+            position: relative;
+
             &:before {
                 content: "\f058";
-                display: inline-block;
-                margin-right: 5px;
+                position: absolute;
+                top: 3px;
+                left: 0;
 
                 -moz-osx-font-smoothing: grayscale;
                 -webkit-font-smoothing: antialiased;
@@ -190,6 +199,7 @@ body {
                 font-style: normal;
                 font-variant: normal;
                 text-rendering: auto;
+                font-size: 21px;
                 line-height: 1;
                 font-family: Font Awesome\ 5 Free;
 
@@ -200,6 +210,10 @@ body {
 
     .container {
         margin-bottom: 10px;
+    }
+
+    .row {
+        margin-bottom: 20px;
     }
 }
 
@@ -264,7 +278,7 @@ body {
 // Block Certificate
 // -------------------------------------------
 .block-certificate {
-
+    padding: 20px 0;
 
     .certificate-items {
 
@@ -273,12 +287,19 @@ body {
     .certificate-item {
 
     }
+
+    .slick-slide {
+        float: none !important;
+        display: inline-block !important;
+        vertical-align: middle;
+    }
 }
 
 //
 // Block Conference
 // -------------------------------------------
 .block-conference {
+    padding: 20px 0;
     background: $color-gray;
 
     .block-title {
@@ -292,12 +313,19 @@ body {
     .conference-item {
 
     }
+
+    .slick-slide {
+        float: none !important;
+        display: inline-block !important;
+        vertical-align: middle;
+    }
 }
 
 //
 // Block Feedback
 // -------------------------------------------
 .block-feedback {
+    padding: 20px 0;
     margin-bottom: 20px;
 
     .feedback-items {
